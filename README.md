@@ -157,23 +157,24 @@ There's a LOT to be done. Feel free to pick up a task from this TaskList, or try
 - Documentation
   - [ ] GitBook Docs
 - Outreach
-  - [ ] LinkedIn Page (Organization)
+  - [x] LinkedIn Page (Organization)
   - [ ] Posters + Marketing (Organization)
-  - [ ] Discord Server (Organization)
+  - [x] Discord Server (Organization)
 
 ### v2.0.0
 - Open Source Kickstart
   - [ ] Make flyers for OS contribution
   - [ ] Try getting traffic up and running (GDSC, IEEE, VIT) for both use + OS support
 - App
+  - [x] - Splash Screen Loader (Wait for Home page to render completely)
   - [ ] - Splash Screen Loader (Wait for Home page to render completely)
   - [ ] - Make Markup Area Larger
   - [ ] - Fix Search - Backend functionality
   - [ ] - Fix links access from App
   - [ ] - Loader for Fetching more posts (Home)
-  - [ ] - Fix Status Bar
-  - [ ] - Info Card (+Link to portfolio as well as Feedback form)
-  - [ ] - Redesign main home and search → Set theme and Color + Bottom Navigator Color
+  - [x] - Fix Status Bar
+  - [x] - Info Card (+Link to portfolio as well as Feedback form)
+  - [x] - Redesign main home and search → Set theme and Color + Bottom Navigator Color
   - [ ] - Blog Post Design + Colour Handling (how to deal with color depending on Thumbnail Color)
   - [ ] - Fix Search (change for each letter)
   - [ ] - Fix Markup Handling
@@ -214,9 +215,12 @@ It's still a work in progress, but please feel free to suggest changes, via GitH
 <div align="center"><i>Dijkstra Admin Panel - Create Post</i></div>
 <br>
 
-| Dijkstra Home Page                      | Dijkstra Post                           | Dijkstra Post - Another Example
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |--------------------------------------------------------------------------------------------------------------- |
-| ![Dijkstra 1](https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/8bba6934-f994-4d19-bc9c-e35d53cf0ac5) | ![Dijkstra 2](https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/8f985c75-aae7-4321-9fd3-c6f664ee6fa4) | ![Dijkstra 3](https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/a64f567d-d54f-4c0e-92a4-fd19ac2ad60c) |
+<p style="padding: 5;" align="center">
+  <a href="https://learn.microsoft.com/en-us/users/jonathanrufussamuel-6286/transcript/v0gw3tnw453em96"><picture><img style="padding: 5;" alt="AZ-900" src="https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/601ae104-16be-4736-9fec-7d5e8a940927" width="30%"></picture></a>
+  <a href="https://learn.microsoft.com/en-us/users/jonathanrufussamuel-6286/transcript/v0gw3tnw453em96"><picture><img style="padding: 5;" alt="AZ-104" src="https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/23828484-3e4f-4ba1-bd6e-782a9e900766" width="30%"></picture></a>
+  <a href="https://learn.microsoft.com/en-us/users/jonathanrufussamuel-6286/transcript/v0gw3tnw453em96"><picture><img style="padding: 5;" alt="AZ-900" src="https://github.com/Dijkstra-Edu/Dijkstra/assets/70965472/09e680b0-fb03-4f75-9a60-a4b5f0888264" width="30%"></picture></a>
+</p>
+<div align="center"><i>Splash Screen, Home Screen, About Us Screen</i></div>
 
 &nbsp;
 
@@ -232,7 +236,9 @@ You can better engage with Dijkstra's community via the following avenues:
 # Acknowledgements
 
 Shoutouts to all these people and companies that make Dijkstra possible:
-- [Full Stack Niraj](https://www.youtube.com/@fsniraj) - For providing the template upon which Dijkstra was built upon. 
+- [MLSA](https://studentambassadors.microsoft.com/en-US/studentambassadors/profile/659128e7-9e57-4de9-a787-652411a526e0) - For providing Credits for Dijkstra's Transition to Azure.
+- [Full Stack Niraj](https://www.youtube.com/@fsniraj) - Youtube Channel for support on building this application.
+- [Canva](https://www.canva.com/) - For Design needs
 - [Hotspot Ai](https://hotpot.ai/) - Splash Screens
 
 &nbsp;
