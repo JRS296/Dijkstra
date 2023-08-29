@@ -5,11 +5,11 @@ import TabNavigator from './Navigation/TabNavigator'
 import { useNetInfo } from "@react-native-community/netinfo";
 import NoInternet from './components/NoInternet';
 
-const CUSTOM_THEME = { ...DefaultTheme, colors: { ...DefaultTheme.colors, background: "#fff" } }
+const CUSTOM_THEME = { ...DefaultTheme, colors: { ...DefaultTheme.colors, background: "#fff" } } //Theme Issue roadmap Issue #1
 
 export default function App() {
   const [noInternet, setNoInternet] = useState(false);
-  const [reqDark, setReqDark] = useState(false);
+  //const [reqDark, setReqDark] = useState(false); //Need to work on this
   const netInfo = useNetInfo();
 
   const fetchNetInfo = () => {
@@ -26,7 +26,6 @@ export default function App() {
 
   return (
     <NavigationContainer theme={CUSTOM_THEME}>
-      
       <TabNavigator />
     </NavigationContainer>
   )

@@ -10,7 +10,7 @@ export default function Slider({ data, title, onSlidePress }) {
     const [visibleSlideIndex, setVisibleSlideIndex] = useState(0);
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-    const onViewableItemsChanged = useRef(({ viewableItems }) => {
+    const onViewableItemsChanged = useRef(({ viewableItems }) => { //UseRef to reference viewableItems object to get back index of current slide.
         currentSlideIndex = viewableItems[0]?.index || 0
         setVisibleSlideIndex(currentSlideIndex);
     });
@@ -103,7 +103,7 @@ export default function Slider({ data, title, onSlidePress }) {
                 pagingEnabled
                 initialScrollIndex={1}
                 showsHorizontalScrollIndicator={false}
-                getItemLayout={(_, index) => ({
+                getItemLayout={(_, index) => ({ //performance boost - optimizes view performance by rendering only rows that are currently visible on screen.
                     length: width,
                     offset: width * index,
                     index

@@ -1,7 +1,7 @@
 const cloudinary = require("cloudinary").v2;
 require('dotenv').config()
 
-//Using cloudinary instead of AWS - free
+//Using cloudinary -> Need to transition to Azure Blob storage
 
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { FlatList, View, Text } from 'react-native';
 
 import FocusAwareStatusBar from '../FocusAwareStatusBar'
@@ -84,18 +84,20 @@ export default function Home({ navigation }) {
   }
 
   const itemSeparatorComponent = () => <Seperator width='90%' style={{ marginTop: 15 }} />
+  const memoizedValue = useMemo(() => renderItem, [latestPosts]);
 
   // return (<Slider onSlidePress={fetchSinglePost} data={featuerdPosts} title="Featured Posts" />);
 
   return <View>
     <FocusAwareStatusBar backgroundColor="rgba(255,255,255,1)" barStyle="dark-content"/>
     <FlatList
+      removeClippedSubviews
       data={latestPosts}
       keyExtractor={(item) => item.id}
       contentContainerStyle={{ paddingHorizontal: 10, paddingBottom: 20 }}
       ListHeaderComponent={Carousel}
       ItemSeparatorComponent={itemSeparatorComponent}
-      renderItem={renderItem}
+      renderItem={memoizedValue}
       onEndReached={fetchMorePosts}
       onEndReachedThreshold={0}
       ListFooterComponent={() => {
